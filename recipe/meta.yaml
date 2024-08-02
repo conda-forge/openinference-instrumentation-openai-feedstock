@@ -1,5 +1,5 @@
 {% set name = "openinference-instrumentation-openai" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/openinference_instrumentation_openai-{{ version }}.tar.gz
-  sha256: eb0bd6a0727c41c40d4aba6fdcc4af61dc6a9996e6e8e70c68c99fd656bd1e10
+  sha256: d997c8b084948393ac4230ec6f8eebbebe9f736c6694103cf23808016f21ab2a
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api
     - opentelemetry-instrumentation
     - opentelemetry-semantic-conventions
-    - openinference-instrumentation >=0.1.11
+    - openinference-instrumentation >=0.1.12
     - openinference-semantic-conventions >=0.1.9
     - typing-extensions
     - wrapt
