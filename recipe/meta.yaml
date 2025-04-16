@@ -1,5 +1,5 @@
 {% set name = "openinference-instrumentation-openai" %}
-{% set version = "0.1.24" %}
+{% set version = "0.1.25" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openinference_instrumentation_openai-{{ version }}.tar.gz
-  sha256: 73891ddc9970c44e0ece867ace6f41df0fe9417abfa92f2edfbd9656b7957c83
+  sha256: 40c52e6086079b389dd7468a5c5da1d24158b4e4c7e15ac2312af761ad95cc8a
 
 build:
   noarch: python
