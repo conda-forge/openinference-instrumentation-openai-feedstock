@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `openinference-instrumentation-openai` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install openinference-instrumentation-openai
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install openinference-instrumentation-openai
 ```
 
-It is possible to list all of the versions of `openinference-instrumentation-openai` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add openinference-instrumentation-openai
+# for installing globally
+pixi global install openinference-instrumentation-openai
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `openinference-instrumentation-openai` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search openinference-instrumentation-openai --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search openinference-instrumentation-openai --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search openinference-instrumentation-openai --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds openinference-instrumentation-openai --channel conda-fo
 # List dependencies of `openinference-instrumentation-openai`:
 mamba repoquery depends openinference-instrumentation-openai --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
